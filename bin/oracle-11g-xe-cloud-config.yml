@@ -1,0 +1,10 @@
+#cloud-config
+
+disable_root: false
+repo_upgrade: none
+bootcmd:
+- [ cloud-init-per, instance, mkswap, /sbin/mkswap, /dev/xvdf ]
+mounts:
+- [ /dev/xvdf, swap, swap ]
+- [ none, /tmp, tmpfs, size=4G ]
+output: { all: '| tee -a /var/log/cloud-init-output.log' }

@@ -1,0 +1,3 @@
+[submodule "oracle-11g-xe-cookbook"]
+	path = cookbooks/oracle-11g-xe
+	url = git@github.com:arkadijs/oracle-11g-xe-cookbook.git
