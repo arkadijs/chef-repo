@@ -2,6 +2,7 @@
 
 disable_root: false
 repo_upgrade: none
+# use /dev/xvdb for HVM images
 bootcmd:
 - [ cloud-init-per, instance, mkswap, /sbin/mkswap, /dev/xvdf ]
 mounts:
